@@ -1,0 +1,9 @@
+.categories {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 3px;
+}
+.categories > li {
+   list-style: none;
+}
