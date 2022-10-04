@@ -7,3 +7,9 @@
 .categories > li {
    list-style: none;
 }
+
+.product-card {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}

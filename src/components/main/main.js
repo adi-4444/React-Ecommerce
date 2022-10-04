@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card';
 import './Main.css'
 
 function Main() {
@@ -17,7 +18,9 @@ function Main() {
           <li>Travel</li>
         </ul>
       </div>
-      
+      <div className="product-card">
+        <Card />
+      </div>
     </div>
   )
 }
