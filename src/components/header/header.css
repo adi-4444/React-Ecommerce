@@ -1,12 +1,18 @@
 * {
    margin: 0px;
 }
+.header-container {
+   position: sticky;
+   top: 0px;
+   z-index: 100;
+}
 .navbar {
    background-color: #1bab6e;
    display: flex;
    align-items: center;
    justify-content: space-around;
    padding: 10px;
+
 }
 .logo-div > h1{
    position: relative;

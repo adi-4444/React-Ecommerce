@@ -7,9 +7,9 @@
 .categories > li {
    list-style: none;
 }
-
-.product-card {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+.category-nav {
+   background-color: #fff;
+   position: sticky;
+   top: 65px;
+   z-index: 99;
 }

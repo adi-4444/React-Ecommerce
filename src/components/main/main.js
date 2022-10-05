@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import Card from './Card';
 import './Main.css'
 
+
+
 function Main() {
+  const [data,setData] = useState([])
+
+
+  useEffect(() => {
+    axios.get("https://dummyjson.com/products?limit=100")
+    .then((res) => setData(res.data.products))
+  },[])
+  console.log(data)
+
   return (
     <div className="main-container">
       <div className="category-nav">
@@ -19,7 +31,7 @@ function Main() {
         </ul>
       </div>
       <div className="product-card">
-        <Card />
+        <Card data={data}/>
       </div>
     </div>
   )

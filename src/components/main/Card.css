@@ -10,16 +10,24 @@
    border-radius: 10px;
    transition: 0.3s linear;
 }
-
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
 .card:hover {
-   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px, rgba(0, 0, 0, 0.5) 0px 5px 10px;
 }
 
-.card-img {
+.card-images {
    border: solid 1px red;
    height: 200px;
    width: 200px;
    align-self: center;
+}
+.card-img {
+   height: 200px;
+   width: 200px;
 }
 .card-title {
    align-self: center;
@@ -27,12 +35,17 @@
    word-wrap: break-word;
    font-size:large;
    font-weight: 500;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 .card-price{
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin-top: 8px;
+   margin-top: -5px;
    position: relative;
    bottom: -35px;
 }
