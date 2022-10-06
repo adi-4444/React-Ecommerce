@@ -10,7 +10,7 @@ function Header() {
       <div className="navbar">
 
         <div className="logo-div">
-          <h1>Ecommerce</h1>
+          <a href='/'>Ecommerce</a>
         </div>
 
         <div className="searchbar-div">

@@ -14,10 +14,11 @@
    padding: 10px;
 
 }
-.logo-div > h1{
+.logo-div > a {
    position: relative;
    color: #fff;
-   left: -25px;
+   font-size:3.5ch;
+   text-decoration: none;
 }
 .searchbar-div {
    background-color: #fff;
