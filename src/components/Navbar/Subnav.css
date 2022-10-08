@@ -1,16 +1,18 @@
+.main-container {
+   position: sticky;
+   top: 63px;
+   z-index: 99;
+}
+.category-nav {
+   background-color: #fff;
+   height: 27px;
+}
 .categories {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin-top: 3px;
 }
+
 .categories > li {
    list-style: none;
-}
-.category-nav {
-   background-color: #fff;
-   position: sticky;
-   top: 63px;
-   z-index: 99;
-   height: 27px;
 }

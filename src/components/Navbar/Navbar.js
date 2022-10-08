@@ -1,10 +1,10 @@
 import React from 'react'
-import './Header.css'
+import './Navbar.css'
 import { BiSearchAlt,BiUserCircle } from 'react-icons/bi';
 import { CgShoppingCart } from 'react-icons/cg';
 
 
-function Header() {
+function Navbar() {
   return (
     <div className="header-container">
       <div className="navbar">
@@ -36,4 +36,5 @@ function Header() {
     </div>
   )
 }
-export default Header;
+export default Navbar;
+
