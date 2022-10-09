@@ -7,13 +7,12 @@
    align-items: center;
 }
 .login-body>h1 {
-   margin-bottom: 50px;
+   margin-bottom: 25px;
 }
 
 .login-wrapper {
    background-color: #fff;
-   width: 35vw;
-   box-shadow: 0 15px 35px rgba(0,0,0,.02);
+   width: 30vw;
    padding: 15px 1px;
    border-radius: 10px;
    display: flex;
