@@ -4,7 +4,8 @@ import axios from 'axios'
 import Card from '../product/Card';
 import Navbar from '../Navbar/Navbar';
 import SubNav from '../Navbar/Subnav';
-import Login from '../login/Login';
+import Login from '../login/Login'
+import Signup from '../Signup/Signup';
 
 
 
@@ -20,8 +21,9 @@ function Main() {
     <>
       <Navbar />
       {/* <SubNav />
-      <Card data={data}/> */}
-      <Login />
+      <Card data={data}/> 
+      <Login />*/}
+      <Signup />
     </>
 
   )
