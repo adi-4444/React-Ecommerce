@@ -4,9 +4,9 @@ import axios from 'axios'
 import Card from '../product/Card';
 import Navbar from '../Navbar/Navbar';
 import SubNav from '../Navbar/Subnav';
-import Login from '../login/Login'
+import Login from '../Login/Login'
 import Signup from '../Signup/Signup';
-
+import {Routes, Route} from 'react-router-dom'
 
 
 function Main() {
@@ -20,10 +20,12 @@ function Main() {
   return (
     <>
       <Navbar />
-      {/* <SubNav />
-      <Card data={data}/> 
-      <Login />*/}
-      <Signup />
+      <SubNav />
+        <Routes>
+          <Route path='/' element={ <Card data={data}/> } />
+          <Route path='/login' element={ <Login /> } />
+          <Route path='/signup' element={ <Signup />} />
+        </Routes>
     </>
 
   )

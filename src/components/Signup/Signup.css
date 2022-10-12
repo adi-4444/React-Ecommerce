@@ -84,9 +84,11 @@
 }
 .signup-btn >p {
    margin-top: 5px;
+   text-align: center;
 }
 
 .signup-btn a {
    cursor: pointer;
    color: blue;
+   text-decoration: none;
 }

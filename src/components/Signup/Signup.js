@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Signup.css'
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 function Signup() {
   const [name, setName] = useState('');
@@ -9,17 +10,21 @@ function Signup() {
   const [confirmpassword, setConfirmPassword] = useState('');
 
   const signupHandler = async () => {
-    console.log("user Signed up")
-    console.log({name,email,password})
-    const user = ({name,email,password})
+    console.log("user clicked Sign up")
+
+    const user = JSON.stringify({name,email,password})
+    console.log(user)
+
     try {
-      const response = await axios.post("URL", user);
+      const response = await axios.post("http://restapi.adequateshop.com/api/authaccount/registration", user);
       console.log(response)
       alert("user Signed up successfully...")
+
     } catch (error) {
       console.log(error)
     }
   }
+
   return (
     <div className='signup-body'>
         <h1>Welcome to Online Shopping</h1>
@@ -60,8 +65,8 @@ function Signup() {
             </div>
 
           <div  className="signup-btn">
-            <button type='submit' onSubmit={signupHandler}>Signup</button>
-            <p>Already have an account ? <a>Login</a></p>
+            <button type='submit' onClick={signupHandler}>Signup</button>
+            <p>Already have an account ? <Link to="/login">Login</Link></p>
           </div>
 
         </div>

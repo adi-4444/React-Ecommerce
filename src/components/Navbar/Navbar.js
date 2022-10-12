@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import { BiSearchAlt,BiUserCircle } from 'react-icons/bi';
 import { CgShoppingCart } from 'react-icons/cg';
-
+import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -19,7 +19,7 @@ function Navbar() {
         </div>
 
         <div className="login">
-          <p>Login</p>
+          <Link to="/login">Login</Link>
         </div>
 
         <div className="user-avatar">
