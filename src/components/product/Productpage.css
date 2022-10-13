@@ -1,0 +1,61 @@
+.product-page {
+   display: flex;
+   gap: 35px;
+   margin: 30px;
+
+}
+
+.image{
+   width: 600px;
+   height: 400px;
+}
+
+.title {
+  margin-top: 10px;
+}
+.brand{
+   margin-left: 25px;
+}
+.description{
+   margin-top: 25px;
+   margin-bottom: 25px;
+   width: 500px;
+}
+
+.discount {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   gap: 50px;
+}
+.original-price{
+   margin-top: 15px;
+   font-weight: 500;
+   text-decoration: line-through;
+   text-decoration-color: red;
+}
+ 
+.price{
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.btn-buy, .btn-addtocart{
+   padding: 8px 15px ;
+   width: 150px;
+   transition: all 0.3s ease-in-out;
+}
+.btn-buy{
+  margin-right: 15px;
+  margin-top: 25px;
+}
+.btn-buy:hover{
+   background-color: #1bab6e;
+   border-color: none;
+   border: none;
+   cursor: pointer;
+}
+.btn-addtocart:hover{
+   background-color: #1bab6e;
+   border-color: none;
+   border: none;
+   cursor: pointer;
+}

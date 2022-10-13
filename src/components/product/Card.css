@@ -15,12 +15,15 @@
    flex-wrap: wrap;
    justify-content: center;
 }
+.cards > a {
+   text-decoration: none;
+   color: black;
+}
 .card:hover {
    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px, rgba(0, 0, 0, 0.5) 0px 5px 10px;
 }
 
 .card-images {
-   border: solid 1px red;
    height: 200px;
    width: 200px;
    align-self: center;

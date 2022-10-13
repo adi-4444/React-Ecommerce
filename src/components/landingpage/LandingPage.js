@@ -6,25 +6,36 @@ import Navbar from '../Navbar/Navbar';
 import SubNav from '../Navbar/Subnav';
 import Login from '../Login/Login'
 import Signup from '../Signup/Signup';
+import Productpage from '../product/Productpage';
 import {Routes, Route} from 'react-router-dom'
-
+import Loading from '../Loading/Loading'
 
 function Main() {
-  
+
   const [data,setData] = useState([])
+  const [isLoading,setIsLoading] = useState(true)
   useEffect(() => {
-    axios.get("https://dummyjson.com/products?limit=100")
-    .then((res) => setData(res.data.products))
+      setTimeout(()=>{
+      axios.get("https://dummyjson.com/products?limit=100")
+      .then((res) => setData(res.data.products),setIsLoading(false))
+      .catch(err => console.log(err))
+    },1000)
   },[])
 
   return (
     <>
       <Navbar />
       <SubNav />
+          {
+            isLoading && <div className='loading-center'><Loading /></div>
+            
+          }
         <Routes>
+        
           <Route path='/' element={ <Card data={data}/> } />
           <Route path='/login' element={ <Login /> } />
           <Route path='/signup' element={ <Signup />} />
+          <Route path='/product/:id' element={<Productpage />} />
         </Routes>
     </>
 

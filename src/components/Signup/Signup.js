@@ -8,18 +8,16 @@ function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmpassword, setConfirmPassword] = useState('');
-
+  
   const signupHandler = async () => {
     console.log("user clicked Sign up")
 
     const user = JSON.stringify({name,email,password})
     console.log(user)
-
     try {
       const response = await axios.post("http://restapi.adequateshop.com/api/authaccount/registration", user);
       console.log(response)
       alert("user Signed up successfully...")
-
     } catch (error) {
       console.log(error)
     }

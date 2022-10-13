@@ -1,15 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Card.css";
 
 function Card({data}) {
+
   return (
     <div className="cards">
       { data ? data.map((product) => (
-          <div className="card" key={product.id}>
+
+        <Link to={`product/${product.id}`} className="card" key={product.id}>
              <div className="card-images">
-                 <img className="card-img" src={product.images[0]}/>
+                 <img className="card-img" src={product.thumbnail}/>
              </div>
-       
+
              <div className="card-title">
                  <p>{product.title}</p>
              </div>
@@ -17,7 +21,8 @@ function Card({data}) {
                  <p>₹ {product.price }</p>
                  <button className="addtocart-btn">Add To Cart</button>
              </div>
-          </div>
+
+          </Link>
       )) : ("")
       }
     </div>

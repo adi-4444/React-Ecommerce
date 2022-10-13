@@ -1,0 +1,79 @@
+@keyframes ldio-s3sv3bj0y79 {
+   0% { opacity: 1 }
+   100% { opacity: 0 }
+ }
+
+ .ldio-s3sv3bj0y79 div {
+   left: 94px;
+   top: 48px;
+   position: absolute;
+   animation: ldio-s3sv3bj0y79 linear 0.2849002849002849s infinite;
+   background: #65ff01;
+   width: 12px;
+   height: 24px;
+   border-radius: 6px / 12px;
+   transform-origin: 6px 52px;
+ }.ldio-s3sv3bj0y79 div:nth-child(1) {
+   transform: rotate(0deg);
+   animation-delay: -0.26115859449192785s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(2) {
+   transform: rotate(30deg);
+   animation-delay: -0.23741690408357077s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(3) {
+   transform: rotate(60deg);
+   animation-delay: -0.2136752136752137s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(4) {
+   transform: rotate(90deg);
+   animation-delay: -0.1899335232668566s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(5) {
+   transform: rotate(120deg);
+   animation-delay: -0.16619183285849953s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(6) {
+   transform: rotate(150deg);
+   animation-delay: -0.14245014245014245s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(7) {
+   transform: rotate(180deg);
+   animation-delay: -0.11870845204178539s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(8) {
+   transform: rotate(210deg);
+   animation-delay: -0.0949667616334283s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(9) {
+   transform: rotate(240deg);
+   animation-delay: -0.07122507122507123s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(10) {
+   transform: rotate(270deg);
+   animation-delay: -0.04748338081671415s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(11) {
+   transform: rotate(300deg);
+   animation-delay: -0.023741690408357077s;
+   background: #65ff01;
+ }.ldio-s3sv3bj0y79 div:nth-child(12) {
+   transform: rotate(330deg);
+   animation-delay: 0s;
+   background: #65ff01;
+ }
+ .loadingio-spinner-spinner-gpz59dm0sxv {
+   width: 200px;
+   height: 200px;
+   display: inline-block;
+   overflow: hidden;
+   background: none;
+ }
+ .ldio-s3sv3bj0y79 {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transform: translateZ(0) scale(1);
+   backface-visibility: hidden;
+   transform-origin: 0 0; /* see note above */
+ }
