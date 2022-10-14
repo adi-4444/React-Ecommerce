@@ -1,18 +1,18 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-
+import Loading from '../Loading/Loading'
 import './Productpage.css'
 
 const Producpage = () => {
   const [data,setData] = useState([])
-  const [isPending, setIspending] = useState(true)
+  const [isLoading,setIsLoading] = useState(true)
 
   const { id } = useParams();
-  const url = `https://dummyjson.com/products/`
+  const url = `https://dummyjson.com/products/${id}`
   useEffect(() => {
     axios.get(url)
-    .then((res) => setData(res.data.products),setIspending(false))
+    .then((res) => setData(res.data.products),setIsLoading(false))
     .catch(err => console.log(err))
   },[])
 
@@ -20,7 +20,7 @@ const Producpage = () => {
   return (
     <>
     {
-      isPending && <h1>Loading...</h1>
+      isLoading && <div className='loading-center'><Loading /></div>
     }
     <h1>params : {id}</h1>
     {
