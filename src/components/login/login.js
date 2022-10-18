@@ -27,9 +27,9 @@ function Login() {
     } catch (error) {
       if(!error.response) {
         console.log("No Service Response");
-      } else if (error.response?.status == 400) {
+      } else if (error.response?.status === 400) {
         console.log("Missing Username or Password");
-      }else if (error.response?.status == 401) {
+      }else if (error.response?.status === 401) {
         console.log("Unauthorised");
       }else {
         console.log('Login failed');
