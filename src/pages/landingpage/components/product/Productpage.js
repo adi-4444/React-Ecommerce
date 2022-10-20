@@ -1,33 +1,29 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import Loading from '../Loading/Loading'
 import './Productpage.css'
 
 const Producpage = () => {
   const [data,setData] = useState([])
-  const [isLoading,setIsLoading] = useState(true)
 
   const { id } = useParams();
   const url = `https://dummyjson.com/products/${id}`
+  
   useEffect(() => {
     axios.get(url)
-    .then((res) => setData(res.data.products),setIsLoading(false))
+    .then((res) => setData(res.data.products))
     .catch(err => console.log(err))
-  },[])
+  },[url])
 
 
   return (
     <>
-    {
-      isLoading && <div className='loading-center'><Loading /></div>
-    }
     <h1>params : {id}</h1>
     {
       data && data.map(product => (
         <div className="product-page" key={product.id}>
            <div className="product-img">
-              <img className='image' src={product.thumbnail}/>
+              <img className='image' src={product.thumbnail} alt='img...'/>
            </div>
         <div className="product-details">
             <p className='category'>{product.category}</p>
