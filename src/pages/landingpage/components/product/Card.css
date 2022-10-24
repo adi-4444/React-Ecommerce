@@ -14,6 +14,8 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   margin-left: 200px;
+   position: relative;
 }
 .cards > a {
    text-decoration: none;

@@ -7,7 +7,8 @@ import Login from '../authentication/Login/Login'
 import Signup from '../authentication/Signup/Signup';
 import {Routes, Route} from 'react-router-dom'
 // import Loading from '../Loading/Loading'
-import Productpage from './components/product/Productpage';
+// import Productpage from './components/product/Productpage';
+import Sidenav from './components/sidenav/Sidenav';
 
 function Main() {
 
@@ -24,12 +25,12 @@ function Main() {
   return (
     <>
       <Navbar />
-
+      <Sidenav />
         <Routes>
           <Route path='/' element={<Card data={data}/>} />
           <Route path='/login' element={ <Login /> } />
           <Route path='/signup' element={ <Signup />} />
-          <Route path='/category/product/:id' element={<Productpage />} />
+          <Route path='/category/:id' element={<Card data={data}/>} />
         </Routes>
     </>
 
