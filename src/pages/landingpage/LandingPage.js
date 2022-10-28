@@ -9,6 +9,7 @@ import {Routes, Route} from 'react-router-dom'
 // import Loading from '../Loading/Loading'
 // import Productpage from './components/product/Productpage';
 import Sidenav from './components/sidenav/Sidenav';
+import Category from './components/product/Category'
 
 function Main() {
 
@@ -30,7 +31,7 @@ function Main() {
           <Route path='/' element={<Card data={data}/>} />
           <Route path='/login' element={ <Login /> } />
           <Route path='/signup' element={ <Signup />} />
-          <Route path='/category/:id' element={<Card data={data}/>} />
+          <Route path='/category/:id' element={<Category />} />
         </Routes>
     </>
 

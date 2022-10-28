@@ -5,23 +5,13 @@ import { Link} from "react-router-dom";
 import "./Card.css";
 
 function Card({data}) {
-
-  // const { ids } = useParams();
-  // const [data,setData] = useState([])
-
-  // const url = `https://dummyjson.com/products/category/${ids}`
-  // useEffect(() => {
-  //   axios.get(url)
-  //   .then((res) => setData(res.data.products))
-  //   .catch(err => console.log(err))
-  // },[])
-
+  
   return (
     <div className="cards">
 
       { data ? data.map((product) => (
 
-        <Link to={`/category/product/${product.id}`} className="card" key={product.id}>
+        <Link to={`/product/${product.id}`} className="card" key={product.id}>
           <div>
              <div className="card-images">
                  <img className="card-img" src={product.thumbnail} alt='img...'/>
