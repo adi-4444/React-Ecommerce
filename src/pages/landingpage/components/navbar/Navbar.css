@@ -72,3 +72,42 @@
    font-size: large;
    color: #fff;
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+   .navbar {
+      background-color: #1bab6e;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 8px;
+   
+   }
+   .logo-div > a {
+      position: relative;
+      color: #fff;
+      font-size:2.5ch;
+      text-decoration: none;
+   }
+   .searchbar-div {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      padding-left: 10px;
+   }
+   .searchbar-div:first-child {
+      color: #1bab6e;
+      font-size: 50px;
+   }
+   .searchbar-div > input {
+      width: 200px;
+      border: none;
+      padding: 3px;
+      transition: all 0.5s ease-in-out;
+   }
+   .login{
+      background-color: #fff;
+      padding: 3px 7px;
+   }
+
+}

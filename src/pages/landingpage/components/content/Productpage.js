@@ -7,7 +7,7 @@ const Producpage = () => {
   const [data,setData] = useState([])
 
   const { id } = useParams();
-  const url = `https://dummyjson.com/products/${id}`
+  const url = `https://dummyjson.com/products/1`
   
   useEffect(() => {
     axios.get(url)
@@ -18,7 +18,7 @@ const Producpage = () => {
 
   return (
     <>
-    <h1>params : {id}</h1>
+    <h1 style={{"textAlign":"center"}}>params : {id}</h1>
     {
       data && data.map(product => (
         <div className="product-page" key={product.id}>

@@ -17,7 +17,7 @@ const Sidenav = () => {
       {
          data && data.map(data => (
                <div className='category-list'>
-                    <Link to={`/category/${data}`}><h4>{data}</h4></Link>
+                    <Link to={`/categories/${data}`}><h4>{data}</h4></Link>
                </div>
          ))
       }

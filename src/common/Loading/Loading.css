@@ -2,7 +2,11 @@
    0% { opacity: 1 }
    100% { opacity: 0 }
  }
-
+ .main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
  .ldio-s3sv3bj0y79 div {
    left: 94px;
    top: 48px;
