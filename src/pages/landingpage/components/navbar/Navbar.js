@@ -29,7 +29,7 @@ function Navbar() {
 
         <div className="cart">
           <CgShoppingCart size={20} color="white"/>
-          <p>cart</p>
+          <Link to={"/cart"}>cart</Link>
         </div>
 
       </div>

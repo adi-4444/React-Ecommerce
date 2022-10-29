@@ -9,7 +9,7 @@ import Sidenav from './components/sidenav/Sidenav';
 import Allproducts from './components/content/Allproducts';
 import Categories from './components/content/Categories';
 import Producpage from './components/content/Productpage';
-import PP from './components/content/PP';
+import Cart from './components/cart/Cart';
 
 
 function Main() {
@@ -24,7 +24,7 @@ function Main() {
           <Route path='/signup' element={ <Signup />} />
           <Route path='/categories/:id' element={<Categories />} />
           <Route path='/productpage/:id' element={<Producpage />} />
-          <Route path='/pp/:id' element={<PP />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
     </>
 
