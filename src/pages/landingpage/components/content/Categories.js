@@ -22,16 +22,10 @@ const Categories = () => {
   
 
   return (
-      <div>
+      <div className='category'>
       {
-         isLoading ? 
-         <Loading /> :
-         <div>
-          <h3 className='center' style={{"textAlign":"center"}}>Categoties Page for {id}</h3>
-          <Card data={data}/>
-         </div>
+         isLoading ? <Loading /> : <Card data={data}/>
       }
-
       </div>
 
   )

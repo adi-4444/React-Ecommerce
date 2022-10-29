@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
 import "./Card.css";
 
 function Card({data}) {
@@ -10,7 +9,7 @@ function Card({data}) {
 
       { data ? data.map((product) => (
 
-        <Link to={`/product/${product.id}`} className="card" key={product.id}>
+        <Link to={`/productpage/${product.id}`} className="card" key={product.id}>
           <div>
              <div className="card-images">
                  <img className="card-img" src={product.thumbnail} alt='img...'/>

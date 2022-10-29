@@ -11,13 +11,12 @@ const Sidenav = () => {
      .then((res) =>  setData(res.data))
      .catch(err => console.log(err))
  },[])
-
   return (
     <div className='sidenav-wrapper'>
       {
-         data && data.map(data => (
+         data && data.map((data,index) => (
                <div className='category-list'>
-                    <Link to={`/categories/${data}`}><h4>{data}</h4></Link>
+                    <Link key={index} to={`/categories/${data}`}><h4>{data}</h4></Link>
                </div>
          ))
       }
