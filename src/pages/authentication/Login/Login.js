@@ -16,7 +16,9 @@ function Login() {
       method: 'post',
       url: 'http://restapi.adequateshop.com/api/authaccount/login',
       headers: { 
-        'Content-Type': 'application/json'
+        "Accept": "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        'Content-Type': 'application/json',
       },
       user
     };

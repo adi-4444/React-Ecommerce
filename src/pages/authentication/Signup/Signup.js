@@ -10,30 +10,17 @@ function Signup() {
   const [confirmpassword, setConfirmPassword] = useState('');
 
 
-  // const signupHandler = async () => {
-  //   console.log("user clicked Sign up")
-
-  //   const user = JSON.stringify({name,email,password})
-  //   console.log(user)
-  //   try {
-  //     const response = await axios.post("http://restapi.adequateshop.com/api/authaccount/registration", user);
-  //     console.log(response)
-  //     alert("user Signed up successfully...")
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
   let data = JSON.stringify({
     'name':name,
     'email':email,
-    'confirmpassword':confirmpassword
+    'password':confirmpassword
   })
   
   const config = {
     method: 'post',
     url : 'http://restapi.adequateshop.com/api/authaccount/registration',
     headers : {
-      'Content-Type':'application/json'
+      'Content-Type': 'application/json',
     },
     data : data
   }
@@ -45,27 +32,7 @@ function Signup() {
     .catch(err => console.log(err))
   }
  
-  //-------------------------------------------------------------------------
-  // let myHeaders = new Headers();
-  // myHeaders.append('Content-Type','application/json');
-
-  // let raw = JSON.stringify({
-  //   name,email,confirmpassword
-  // })
-  // let request = {
-  //   method : 'POST',
-  //   headers: myHeaders,
-  //   body: raw,
-  //   redirect: 'follow'
-  // };
-  // const signupHandler = () => {
-  // console.log(raw)
-  // fetch('http://restapi.adequateshop.com/api/authaccount/registration',request)
-  // .then(res => res.json())
-  // .then(result => console.log(result))
-  // .catch(err => console.log('err',err))
-  // }
-
+ 
   return (
     <div className='signup-body'>
         <h1>Welcome to Online Shopping</h1>
